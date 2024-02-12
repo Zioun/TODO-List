@@ -30,3 +30,13 @@ let submitBtn = document.getElementById("submitBtn").addEventListener('click',fu
         }
     }
 })
+// TODO Remove option
+
+document.getElementById("paragraphArea").addEventListener('click',function(event){
+    let clickedElement = event.target;
+    let tagName = event.target.tagName;
+    if(tagName === 'P'){
+        event.target.parentNode.removeChild(clickedElement);
+    }
+})
+
